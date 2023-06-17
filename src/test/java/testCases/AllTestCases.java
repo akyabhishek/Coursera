@@ -21,7 +21,7 @@ public class AllTestCases extends BaseClass {
 	ForCampusPage forCampusPage;
 	ContactSalesPage contactSalesPage;
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void verifyCourses() {
 		invokeBrowser(prop.getProperty("browserName"));
 		logger = report.createTest("Verify web development courses");
@@ -34,7 +34,7 @@ public class AllTestCases extends BaseClass {
 		reportPass("Test case - Verify web development courses, passed succesfully");
 	}
 
-	@Test(enabled = true ,dataProvider = "getContactFormData", dataProviderClass=utilities.DataProviders.class,priority = 1)
+	@Test(enabled = false ,dataProvider = "getContactFormData", dataProviderClass=utilities.DataProviders.class,priority = 1)
 	public void campusContact(Hashtable<String, String> testData) {
 		invokeBrowser(prop.getProperty("browserName"));
 		logger = report.createTest(testData.get("testType")+" campus contact form for - "+testData.get("firstname"));

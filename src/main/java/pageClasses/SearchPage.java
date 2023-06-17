@@ -84,7 +84,7 @@ public class SearchPage extends BaseClass {
 	// Prints name of all the courses from search result
 	public void printCourses(String title) {
 		printSubTitle(title);
-		waitForElementToBeVisible(productCards.get(0), 20);
+//		waitForElementToBeVisible(productCards.get(0), 20);
 		for (int i = 0; i < productCards.size(); i++) {
 			String name = productCards.get(i).findElement(By.tagName("h2")).getText();
 			System.out.println(i + 1 + ". " + name);

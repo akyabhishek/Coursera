@@ -279,7 +279,7 @@ public class BaseClass {
 	/****************** Clear the input field ***********************/
 	public void clearInput(WebElement element) {
 		try {
-			reportPass("Clearing the value of element - " + element);
+			reportInfo("Clearing the value of element - " + element);
 			String s1 = Keys.chord(Keys.CONTROL, "a");
 			element.sendKeys(s1);
 			element.sendKeys(Keys.DELETE);
@@ -291,9 +291,14 @@ public class BaseClass {
 
 	/****************** Click enter input field ***********************/
 	public void clickEnter(WebElement element) {
-		reportPass("Clicking ENTER key in element - " + element);
+		try {
+		reportInfo("Clicking ENTER key in element - " + element);
 		element.sendKeys(Keys.ENTER);
 		reportPass("Clicked ENTER key in element - " + element);
+		}
+		catch (Exception e) {
+			reportFail(e.getMessage());
+		}
 	}
 
 	/****************** Select Option ***********************/
