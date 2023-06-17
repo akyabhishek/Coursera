@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-17T12:36:40 IST" name="Default suite" finished-at="2023-06-17T12:38:09 IST" duration-ms="89043">
+    <groups>
+    </groups>
+    <test started-at="2023-06-17T12:36:40 IST" name="Default test" finished-at="2023-06-17T12:38:09 IST" duration-ms="89043">
+      <class name="testCases.AllTestCases">
+        <test-method is-config="true" signature="invokeProperties()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:36:40 IST" name="invokeProperties" finished-at="2023-06-17T12:36:40 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeProperties -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:36:41 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T12:36:59 IST" duration-ms="18670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Beginner}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:36:59 IST" name="quitBrowser" finished-at="2023-06-17T12:37:00 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:37:00 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T12:37:27 IST" duration-ms="26974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Intermediate}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:37:27 IST" name="quitBrowser" finished-at="2023-06-17T12:37:27 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:37:27 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T12:37:45 IST" duration-ms="18096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Advanced}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:37:45 IST" name="quitBrowser" finished-at="2023-06-17T12:37:45 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:37:45 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T12:38:09 IST" duration-ms="23623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Mixed}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:38:09 IST" name="quitBrowser" finished-at="2023-06-17T12:38:09 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T12:38:09 IST" name="flushReport" finished-at="2023-06-17T12:38:09 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- testCases.AllTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
