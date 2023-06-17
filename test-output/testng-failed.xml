@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.AllTestCases">
         <methods>
-          <include name="verifyLanguageLearning" invocation-numbers="0 1 2 3"/>
+          <include name="verifyLanguageLearning" invocation-numbers="0"/>
           <include name="invokeProperties"/>
           <include name="flushReport"/>
           <include name="quitBrowser"/>
