@@ -4,7 +4,7 @@ package utilities;
 public class LocalTextFormatter {
 	// Fomating the duration text
 	public static String formatDuration(String value) {
-		String[] values = value.split("Â·");
+		String[] values = value.split("·");
 		String newValue = values[values.length - 1].trim();
 		return newValue;
 

@@ -77,9 +77,9 @@ public class SearchPage extends BaseClass {
 				rating = productCards.get(i).findElement(By.xpath("//div[2]/div[2]/div[1]/p[1]")).getText();
 			} else {
 				name = productCards2.get(i).findElement(By.tagName("h3")).getText();
-				duration = productCards2.get(i).findElement(By.xpath("//div[@class='cds-CommonCard-ratings']/div/p[1]"))
+				rating = productCards2.get(i).findElement(By.xpath("//div[@class='cds-CommonCard-ratings']/div/p[1]"))
 						.getText();
-				rating = productCards2.get(i).findElement(By.xpath("//div[@class='cds-CommonCard-metadata']/p"))
+				duration = productCards2.get(i).findElement(By.xpath("//div[@class='cds-CommonCard-metadata']/p"))
 						.getText();
 			}
 			duration = LocalTextFormatter.formatDuration(duration);
