@@ -202,6 +202,7 @@ public class BaseClass {
 
 	/****************** Capture Screenshot ***********************/
 	public void takeScreenShotOnFailure() {
+		reportInfo("Capturing screenshot");
 		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
 
@@ -210,6 +211,7 @@ public class BaseClass {
 			FileUtils.copyFile(sourceFile, destFile);
 			logger.addScreenCaptureFromPath(
 					System.getProperty("user.dir") + "/ScreenShots/" + DateUtils.getTimeStamp() + ".png");
+			reportPass("Screenshot caputred and attached in report");
 
 		} catch (IOException e) {
 			e.printStackTrace();

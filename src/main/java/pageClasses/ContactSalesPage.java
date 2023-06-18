@@ -132,6 +132,7 @@ public class ContactSalesPage extends BaseClass {
 			if (testType.equals("Invalid")) {
 				System.out.println(getErrorMsg());
 				reportInfo("Error message while submitting form - " + getErrorMsg());
+				takeScreenShotOnFailure();
 			}
 			waitLoad(5);
 			try {
