@@ -67,7 +67,7 @@ public class SearchPage extends BaseClass {
 
 	// Prints Name, rating, duration of top two courses from search result
 	public void printFirstTwoCourse() {
-		waitForElementToBeVisible(productCards.get(0), 10);
+//		waitForElementToBeVisible(productCards.get(0), 10);
 		printTitle("Top Two Courses");
 		for (int i = 0; i < 2; i++) {
 			String name = null, duration = null, rating = null;

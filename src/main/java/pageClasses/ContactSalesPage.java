@@ -47,16 +47,16 @@ public class ContactSalesPage extends BaseClass {
 	@FindBy(id = "Country")
 	WebElement selectCountry;
 
-	@FindBy(id= "State")
+	@FindBy(id = "State")
 	WebElement selectState;
-	
+
 	@FindBy(id = "What_the_lead_asked_for_on_the_website__c")
 	WebElement selectNeeds;
 
-	@FindBy(xpath =  "//button[@type='submit']")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submitBtn;
 
-	@FindBy(id="ValidMsgEmail")
+	@FindBy(id = "ValidMsgEmail")
 	WebElement errorMessagElement;
 
 	public void setFirstName(String firstname) {
@@ -95,7 +95,7 @@ public class ContactSalesPage extends BaseClass {
 	public void setCountry(String country) {
 		selectOption(selectCountry, country);
 	}
-	
+
 	public void setState(String state) {
 		waitForElementToBeVisible(selectState, 10);
 		selectOption(selectState, state);
@@ -104,6 +104,7 @@ public class ContactSalesPage extends BaseClass {
 	public void setNeeds(String needs) {
 		selectOption(selectNeeds, needs);
 	}
+
 	public void clickSubmit() {
 		elementClickViaHover(submitBtn);
 	}
@@ -111,35 +112,36 @@ public class ContactSalesPage extends BaseClass {
 	public String getErrorMsg() {
 		return errorMessagElement.getText();
 	}
-	public void submitForm(String firstname,String lastname,String title,String discipline,String email,String phone, String company,String institution,String country, String state, String needs , String nextPageTitle,String testType) {
+
+	public void submitForm(String firstname, String lastname, String title, String discipline, String email,
+			String phone, String company, String institution, String country, String state, String needs,
+			String nextPageTitle, String testType) {
 		try {
-		setFirstName(firstname);
-		setLastName(lastname);
-		setTitle(title);
-		setDiscipline(discipline);
-		setEmail(email);
-		setPhone(phone);
-		setCompany(company);
-		setInstitution(institution);
-		setCountry(country);
-		setState(state);
-		setNeeds(needs);
-		clickSubmit();
-		if(testType.equals("Invalid")) {
-			System.out.println(getErrorMsg());
-			reportInfo("Error message while submitting form - "+getErrorMsg());
-		}		
-		waitLoad(5);
-		try {
-		verifyTitle(nextPageTitle);
-		}catch (AssertionError e) {
-			verifyTitle("(1) New Messages!");
-		}
-		}catch(Exception e) {
+			setFirstName(firstname);
+			setLastName(lastname);
+			setTitle(title);
+			setDiscipline(discipline);
+			setEmail(email);
+			setPhone(phone);
+			setCompany(company);
+			setInstitution(institution);
+			setCountry(country);
+			setState(state);
+			setNeeds(needs);
+			clickSubmit();
+			if (testType.equals("Invalid")) {
+				System.out.println(getErrorMsg());
+				reportInfo("Error message while submitting form - " + getErrorMsg());
+			}
+			waitLoad(5);
+			try {
+				verifyTitle(nextPageTitle);
+			} catch (AssertionError e) {
+				verifyTitle("(1) New Messages!");
+			}
+		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
 	}
-
-
 
 }
