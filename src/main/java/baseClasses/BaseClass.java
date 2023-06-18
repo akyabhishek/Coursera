@@ -71,18 +71,21 @@ public class BaseClass {
 						System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--remote-allow-origins=*");
+				options.addArguments("--log-level=3");
 				driver = new ChromeDriver(options);
 			} else if (browserName.equalsIgnoreCase("Mozila")) {
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\geckodriver.exe");
 				FirefoxOptions options = new FirefoxOptions();
 				options.addArguments("--remote-allow-origins=*");
+				options.addArguments("--log-level=3");
 				driver = new FirefoxDriver(options);
 			} else if (browserName.equalsIgnoreCase("Edge")) {
 				System.setProperty("webdriver.edge.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\msedgedriver.exe");
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--remote-allow-origins=*");
+				options.addArguments("--log-level=3");
 				driver = new EdgeDriver(options);
 			} else {
 				reportFail(browserName + " is not a valid browser name");

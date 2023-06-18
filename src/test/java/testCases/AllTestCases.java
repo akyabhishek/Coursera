@@ -55,7 +55,6 @@ public class AllTestCases extends BaseClass {
 		homePage = openApplication(prop.getProperty("URL"));
 		verifyTitle("Coursera | Degrees, Certificates, & Free Online Courses");
 		searchPage = homePage.search(testData.get("searchQuery"));
-
 		searchPage.filterLevel(testData.get("level"));
 		searchPage.printCourses(testData.get("level")+" Courses");
 		System.out.println("\nTotal courses for "+testData.get("level")+" level - " + searchPage.getNumberOfResult() + "\n");

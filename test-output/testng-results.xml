@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-17T23:15:11 IST" name="Default suite" finished-at="2023-06-17T23:18:35 IST" duration-ms="203694">
+  <suite started-at="2023-06-18T09:26:10 IST" name="Default suite" finished-at="2023-06-18T09:31:29 IST" duration-ms="318804">
     <groups>
     </groups>
-    <test started-at="2023-06-17T23:15:11 IST" name="Default test" finished-at="2023-06-17T23:18:35 IST" duration-ms="203694">
+    <test started-at="2023-06-18T09:26:10 IST" name="Default test" finished-at="2023-06-18T09:31:29 IST" duration-ms="318804">
       <class name="testCases.AllTestCases">
-        <test-method is-config="true" signature="invokeProperties()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:15:11 IST" name="invokeProperties" finished-at="2023-06-17T23:15:11 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="invokeProperties()[pri:0, instance:testCases.AllTestCases@6a84a97d]" started-at="2023-06-18T09:26:10 IST" name="invokeProperties" finished-at="2023-06-18T09:26:10 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeProperties -->
-        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:15:12 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T23:17:31 IST" duration-ms="139539" status="PASS">
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@6a84a97d]" started-at="2023-06-18T09:26:11 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T09:28:26 IST" duration-ms="135261" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLanguageLearning -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:17:31 IST" name="quitBrowser" finished-at="2023-06-17T23:17:31 IST" duration-ms="377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:17:31 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T23:17:59 IST" duration-ms="27425" status="PASS">
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@6a84a97d]" started-at="2023-06-18T09:28:26 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T09:28:47 IST" duration-ms="20962" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLanguageLearning -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:17:59 IST" name="quitBrowser" finished-at="2023-06-17T23:17:59 IST" duration-ms="255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:17:59 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T23:18:16 IST" duration-ms="16520" status="PASS">
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@6a84a97d]" started-at="2023-06-18T09:28:47 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T09:31:10 IST" duration-ms="142687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLanguageLearning -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:18:16 IST" name="quitBrowser" finished-at="2023-06-17T23:18:16 IST" duration-ms="268" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:18:16 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-17T23:18:34 IST" duration-ms="18455" status="PASS">
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@6a84a97d]" started-at="2023-06-18T09:31:10 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T09:31:29 IST" duration-ms="19076" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,11 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLanguageLearning -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:18:34 IST" name="quitBrowser" finished-at="2023-06-17T23:18:35 IST" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-17T23:18:35 IST" name="flushReport" finished-at="2023-06-17T23:18:35 IST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.AllTestCases@6a84a97d]" started-at="2023-06-18T09:31:29 IST" name="flushReport" finished-at="2023-06-18T09:31:29 IST" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

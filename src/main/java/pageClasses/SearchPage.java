@@ -39,6 +39,9 @@ public class SearchPage extends BaseClass {
 	@FindAll(value = { @FindBy(xpath = "//div[@data-e2e='ProductCard']") })
 	List<WebElement> productCards;
 
+	@FindAll(value = { @FindBy(xpath = "//div[@data-e2e='product-card-cds']") })
+	List<WebElement> productCards2;
+
 	@FindBy(xpath = "//div[@data-e2e='NumberOfResultsSection']/span")
 	WebElement numberOfResultElement;
 
@@ -67,9 +70,18 @@ public class SearchPage extends BaseClass {
 		waitForElementToBeVisible(productCards.get(0), 10);
 		printTitle("Top Two Courses");
 		for (int i = 0; i < 2; i++) {
-			String name = productCards.get(i).findElement(By.tagName("h2")).getText();
-			String duration = productCards.get(i).findElement(By.xpath("//div[2]/div[2]/p")).getText();
-			String rating = productCards.get(i).findElement(By.xpath("//div[2]/div[2]/div[1]/p[1]")).getText();
+			String name = null, duration = null, rating = null;
+			if (!productCards.isEmpty()) {
+				name = productCards.get(i).findElement(By.tagName("h2")).getText();
+				duration = productCards.get(i).findElement(By.xpath("//div[2]/div[2]/p")).getText();
+				rating = productCards.get(i).findElement(By.xpath("//div[2]/div[2]/div[1]/p[1]")).getText();
+			} else {
+				name = productCards2.get(i).findElement(By.tagName("h3")).getText();
+				duration = productCards2.get(i).findElement(By.xpath("//div[@class='cds-CommonCard-ratings']/div/p[1]"))
+						.getText();
+				rating = productCards2.get(i).findElement(By.xpath("//div[@class='cds-CommonCard-metadata']/p"))
+						.getText();
+			}
 			duration = LocalTextFormatter.formatDuration(duration);
 			printSubTitle("Course " + (i + 1));
 			System.out.println("Name - " + name + "\nRatings - " + rating + "\t Duration - " + duration + "\n");
@@ -83,11 +95,24 @@ public class SearchPage extends BaseClass {
 
 	// Prints name of all the courses from search result
 	public void printCourses(String title) {
-		printSubTitle(title);
+		try {
+			printSubTitle(title);
 //		waitForElementToBeVisible(productCards.get(0), 20);
-		for (int i = 0; i < productCards.size(); i++) {
-			String name = productCards.get(i).findElement(By.tagName("h2")).getText();
-			System.out.println(i + 1 + ". " + name);
+			String name = null;
+			if (!productCards.isEmpty()) {
+				for (int i = 0; i < productCards.size(); i++) {
+					name = productCards.get(i).findElement(By.tagName("h2")).getText();
+					System.out.println(i + 1 + ". " + name);
+				}
+			} else {
+				for (int i = 0; i < productCards2.size(); i++) {
+					name = productCards2.get(i).findElement(By.tagName("h3")).getText();
+					System.out.println(i + 1 + ". " + name);
+				}
+				
+			}
+		} catch (Exception e) {
+			reportFail(e.getMessage());
 		}
 
 	}
