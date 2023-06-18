@@ -1,25 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-18T10:07:00 IST" name="Default suite" finished-at="2023-06-18T10:08:00 IST" duration-ms="59839">
+  <suite started-at="2023-06-18T10:10:10 IST" name="Default suite" finished-at="2023-06-18T10:15:55 IST" duration-ms="344958">
     <groups>
     </groups>
-    <test started-at="2023-06-18T10:07:00 IST" name="Default test" finished-at="2023-06-18T10:08:00 IST" duration-ms="59839">
+    <test started-at="2023-06-18T10:10:10 IST" name="Default test" finished-at="2023-06-18T10:15:55 IST" duration-ms="344958">
       <class name="testCases.AllTestCases">
-        <test-method is-config="true" signature="invokeProperties()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:07:00 IST" name="invokeProperties" finished-at="2023-06-18T10:07:00 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="invokeProperties()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:10:10 IST" name="invokeProperties" finished-at="2023-06-18T10:10:10 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeProperties -->
-        <test-method signature="verifyCourses()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:07:00 IST" name="verifyCourses" finished-at="2023-06-18T10:08:00 IST" duration-ms="59544" status="PASS">
+        <test-method signature="verifyCourses()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:10:10 IST" name="verifyCourses" finished-at="2023-06-18T10:11:14 IST" duration-ms="64460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCourses -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:08:00 IST" name="quitBrowser" finished-at="2023-06-18T10:08:00 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:11:14 IST" name="quitBrowser" finished-at="2023-06-18T10:11:15 IST" duration-ms="712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:08:00 IST" name="flushReport" finished-at="2023-06-18T10:08:01 IST" duration-ms="298" status="PASS">
+        <test-method signature="campusContact(java.util.Hashtable)[pri:1, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:11:16 IST" name="campusContact" data-provider="getContactFormData" finished-at="2023-06-18T10:12:22 IST" duration-ms="66155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{state=Uttar Pradesh, discipline=Information Technology, testType=Invalid, country=India, institution=Public University, needs=Learner Support, firstname=Tony, lastname=Stark, phone=919876543210, email=abbb, company=ABC, title=Intern, nextPageTitle=Learn More About Coursera for Campus | Coursera}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campusContact -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:12:22 IST" name="quitBrowser" finished-at="2023-06-18T10:12:22 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="campusContact(java.util.Hashtable)[pri:1, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:12:22 IST" name="campusContact" data-provider="getContactFormData" finished-at="2023-06-18T10:13:22 IST" duration-ms="59725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{state=Uttar Pradesh, discipline=Information Technology, testType=Valid, country=India, institution=Public University, needs=Learner Support, firstname=Iron, lastname=Man, phone=919988776655, email=admin@stark.com, company=Stark Industries, title=Intern, nextPageTitle=Thank you for your interest in Coursera for Campus | Coursera}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campusContact -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:13:22 IST" name="quitBrowser" finished-at="2023-06-18T10:13:23 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:13:23 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T10:14:07 IST" duration-ms="44386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Beginner}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:14:07 IST" name="quitBrowser" finished-at="2023-06-18T10:14:08 IST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:14:08 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T10:14:26 IST" duration-ms="18630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Intermediate}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:14:26 IST" name="quitBrowser" finished-at="2023-06-18T10:14:27 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:14:27 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T10:15:11 IST" duration-ms="44554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Advanced}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:15:11 IST" name="quitBrowser" finished-at="2023-06-18T10:15:12 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifyLanguageLearning(java.util.Hashtable)[pri:2, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:15:12 IST" name="verifyLanguageLearning" data-provider="getLanguageLearningData" finished-at="2023-06-18T10:15:54 IST" duration-ms="42381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{searchQuery=Language Learning, level=Mixed}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLearning -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:15:54 IST" name="quitBrowser" finished-at="2023-06-18T10:15:55 IST" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testCases.AllTestCases@223aa2f7]" started-at="2023-06-18T10:15:55 IST" name="flushReport" finished-at="2023-06-18T10:15:55 IST" duration-ms="452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
